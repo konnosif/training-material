@@ -370,8 +370,8 @@ To create this table, we need to:
 >
 > 1. **Text reformatting** {% icon tool %} with the following parameters:
 >    - {% icon param-file %} *"File to process"*: `Gene annotation`
->    - *"AWK Program"*: `{print $1, $1 ~ /^MT-/}`
->
+>    - *"AWK Program"*: `{print $2, $2 ~ /^MT-/}`
+>    - Column 2 is reffering to gene names
 > 2. Inspect the generated file
 >
 >    > ### {% icon question %} Questions
